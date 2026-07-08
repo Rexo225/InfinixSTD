@@ -352,9 +352,10 @@ section{ position:relative; }
 }
 
 @media (max-width:900px){
-  .accordion{ flex-direction:column; height:auto; gap:2px; }
-  .service-panel{ height:74px; flex:none; transition:height .8s var(--ease-soft); }
-  .service-panel.active{ height:320px; flex-grow:0; }
+  .accordion{ display: flex; flex-direction:column; height:auto; gap:8px; }
+  .service-panel{ height:80px; flex:none; transition:height .5s ease;overflow: hidden; }
+  .service-panel.active{ height:auto; min-height: 520px; }
+  .panel-tint{position:absolute;inset:0;}
   .panel-label .name-collapsed{ writing-mode:horizontal-tb; transform:none; font-size:17px; }
   .panel-mark{ width:24px; height:24px; top:22px; left:22px; }
   .panel-num{ top:22px; right:22px; }
