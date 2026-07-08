@@ -353,14 +353,13 @@ section{ position:relative; }
 
 @media (max-width:900px){
   .accordion{ display: flex; flex-direction:column; height:auto; gap:8px; }
-  .service-panel{ height:80px; flex:none; transition:height .5s ease;overflow: hidden; margin: 5px;}
+  .service-panel{ height:80px; flex:none; transition:height .5s ease;overflow: hidden; }
   .service-panel.active{ height:auto; min-height: 520px; }
-  .panel-tint{width: auto; height: auto;}
-  .panel-label .name-collapsed{ writing-mode:horizontal-tb; transform:none; font-size:18px; }
+  .panel-label .name-collapsed{ writing-mode:horizontal-tb; transform:none; font-size:17px; }
   .panel-mark{ width:24px; height:24px; top:22px; left:22px; }
-  .panel-num{ top:24px; right:24px; }
+  .panel-num{ top:22px; right:22px; }
   .panel-label{ left:22px; bottom:22px; }
-  .panel-expand{left:22px; right:22px }
+  .panel-expand{ left:22px; right:22px; bottom:22px; }
 
 }
 
